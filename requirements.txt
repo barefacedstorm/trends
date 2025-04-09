@@ -1,0 +1,7 @@
+python-dotenv==1.0.0
+flask==3.0.3
+newsapi-python==0.2.7
+numpy==1.26.4
+requests==2.31.0
+transformers==4.37.2
+torch==2.2.1
