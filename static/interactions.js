@@ -1,3 +1,13 @@
+function showFullArticle(url) {
+    // Remove any cursor before navigating to the article
+    const terminal = document.querySelector('h1');
+    const cursor = document.querySelector('.cursor');
+    if (terminal.contains(cursor)) {
+        terminal.removeChild(cursor);
+    }
+    window.location.href = url;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Terminal typing effect
     const terminalText = [
