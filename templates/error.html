@@ -97,7 +97,7 @@
 
             <p style="margin-top: 30px; color: #00ff88">
             [NOTICE] Beta infrastructure limitations in effect<br>
-            Version 2.0 neural network upgrading - ETA: 4/10/2025 09:00 MST<br>
+            Version 2.0 neural network upgrading - ETA: {{ (utcnow() + timedelta(hours=12)).strftime("%-m/%-d/%Y %H:%M") }} MST<br>
             Support our open-source initiative <a href="https://cash.app/$itswags">here</a>.
             </p>
         </div>
