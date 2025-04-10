@@ -5,6 +5,8 @@ import os
 import json
 import time
 from dotenv import load_dotenv
+from datetime import datetime, timedelta
+
 
 load_dotenv()
 
@@ -89,7 +91,7 @@ def index():
 
     except Exception as e:
         print(f"Error fetching news: {e}")
-        return render_template('error.html')
+        return render_template('error.html', utcnow=datetime.utcnow, timedelta=timedelta)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
